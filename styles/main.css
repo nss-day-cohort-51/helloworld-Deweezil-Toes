@@ -14,7 +14,7 @@ Font-pairing is -
 */
 
 
-/* General format styling */
+/* GENERAL PAGE STYLING */
 
 body {
     background-color: #FAB330;
@@ -64,23 +64,37 @@ p {
     color: #131E3B;  
 }
 
-/* header styling */
+/* HEADER STYLING */
 
 .header {
     display: flex;
     flex-direction: column;
-    /* width: 100% */
     background-color: #FAB330;
     justify-content: center;
+    padding: 0px;
+    margin: 0px;
 }
 
 .logo {
     align-self: center;
-    width: 300px;
+    text-align: center;
+    width: 500px;
+    padding: 0px;
+    margin: 0px; 
+    /* border: 3px dashed red;    */
+}
+
+.logo img {
+    width: 80%;
+    margin: 20px 0px 30px 0px; 
+    /* border: 10px dotted purple;    */
 }
 
 .top-logo {
     width: 100%;
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid black; */
 }
 
 .nav {
@@ -126,14 +140,14 @@ li a:hover {
     ;
   }
 
-  /* this makes the blue line under nav bar */
+/* this makes the blue line under nav bar */
 .header span {
-    width: 100%;
-    height: 4px;
-    background-color: #5282FA;
+width: 100%;
+height: 4px; /* change this to make line thicker */
+background-color: #5282FA;
 }
 
-/* main body styling */
+/* MAIN BODY STYLING */
 
 .main {
     display: flex;
@@ -144,12 +158,21 @@ li a:hover {
     padding: 0px;
 }
 
+  /* this makes the blue line across page */
+.main span {
+    width: 100%;
+    height: 4px; /* change this to make line thicker */
+    background-color: #5282FA;
+}
+
 .section1 {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     text-align: center;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
-}
+} /* made section1 a flexbox to solve the problem of a thin gap under image showing background color of page - now no gap */
 
 .banner {
     width: 100%;
@@ -159,9 +182,10 @@ li a:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    background-color: #FAB330;
     margin: 0px 0px 0px 0px;
-    padding: 0px 0px 20px 0px;
+    padding: 0px 0px 10px 0px;
 }
 
 .section3 {
@@ -169,7 +193,7 @@ li a:hover {
     flex-direction: column;
     text-align: center;
     background-color:white;
-    margin: 5px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 .country-cards {
@@ -189,9 +213,11 @@ li a:hover {
   }
 
   .card {
+    width: 250px;
     display: flex;
     flex-direction: column;
-    border: 2px solid #ffa545;
+    flex-wrap: nowrap;
+    border: 2px solid #fb9930;
     background-color: #FAB330;
     text-align: center;
     margin: 10px;
@@ -200,7 +226,6 @@ li a:hover {
   }
 
   .card-text {
-    width: 250px;
     word-wrap: break-word;
     overflow-wrap: break-word;
     text-align: justify;
@@ -208,9 +233,9 @@ li a:hover {
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 500;
-    padding: 15px 31px 25px 30px;
+    padding: 15px 30px 25px 31px;
     margin: 0px 0px 0px 0px;
-    /* list-style-type: none; */
+    list-style-type: none;
   }
 
   .card-text h4 {
@@ -219,7 +244,13 @@ li a:hover {
     padding: 0px;    
   }
 
-/* footer styling */
+  .card-text ul {
+    list-style-type: circle;
+    margin: 10px 0px 0px 20px;
+    padding: 0px;    
+  }
+
+/* FOOTER STYLING */
 
 .footer {
     display: flex;
@@ -227,13 +258,15 @@ li a:hover {
     justify-content: center;
     width: 100%;
     background-color: #FAB330;
+    padding: 0px;
+    margin: 0px;
     /* border: 1px solid red; */
 }
 
-
+/* creates the blue line at top of footer */
 .footer span {
     width: 100%;
-    height: 4px;
+    height: 4px; /* change this to make line thicker */
     background-color: #5282FA;
 }
 
@@ -241,9 +274,8 @@ li a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* width: 100%; */
     justify-content: space-between;
-    margin: 40px;
+    margin: 0px 40px;
 }
 
 .col1 {
@@ -282,7 +314,7 @@ li a:hover {
     margin: 0px;
 }
 
-/* subscription button styling */
+/* SUBSCRIPTION BUTTON STYLING */
 
 .buttonIn {
 width: 250px;
