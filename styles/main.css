@@ -187,6 +187,10 @@ background-color: #5282FA;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 10px 0px;
 }
+.section2 p {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+}
 
 .section3 {
     display: flex;
@@ -194,6 +198,11 @@ background-color: #5282FA;
     text-align: center;
     background-color:white;
     margin: 0px 0px 0px 0px;
+}
+
+.section3 q {
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
 }
 
 .country-cards {
@@ -217,8 +226,8 @@ background-color: #5282FA;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    border: 2px solid #fb9930;
-    background-color: #FAB330;
+    border: 2px solid #131E3B;
+    background-color: #5282FA;
     text-align: center;
     margin: 10px;
     padding: 4px;
