@@ -14,7 +14,7 @@ Font-pairing is -
 */
 
 
-/* General format styling */
+/* GENERAL PAGE STYLING */
 
 body {
     background-color: #FAB330;
@@ -64,23 +64,37 @@ p {
     color: #131E3B;  
 }
 
-/* header styling */
+/* HEADER STYLING */
 
 .header {
     display: flex;
     flex-direction: column;
-    /* width: 100% */
     background-color: #FAB330;
     justify-content: center;
+    padding: 0px;
+    margin: 0px;
 }
 
 .logo {
     align-self: center;
-    width: 300px;
+    text-align: center;
+    width: 500px;
+    padding: 0px;
+    margin: 0px; 
+    /* border: 3px dashed red;    */
+}
+
+.logo img {
+    width: 80%;
+    margin: 20px 0px 30px 0px; 
+    /* border: 10px dotted purple;    */
 }
 
 .top-logo {
     width: 100%;
+    padding: 0px;
+    margin: 0px;
+    /* border: 1px solid black; */
 }
 
 .nav {
@@ -126,14 +140,14 @@ li a:hover {
     ;
   }
 
-  /* this makes the blue line under nav bar */
+/* this makes the blue line under nav bar */
 .header span {
-    width: 100%;
-    height: 4px; /* change this to make line thicker */
-    background-color: #5282FA;
+width: 100%;
+height: 4px; /* change this to make line thicker */
+background-color: #5282FA;
 }
 
-/* main body styling */
+/* MAIN BODY STYLING */
 
 .main {
     display: flex;
@@ -230,7 +244,13 @@ li a:hover {
     padding: 0px;    
   }
 
-/* footer styling */
+  .card-text ul {
+    list-style-type: circle;
+    margin: 10px 0px 0px 20px;
+    padding: 0px;    
+  }
+
+/* FOOTER STYLING */
 
 .footer {
     display: flex;
@@ -238,6 +258,8 @@ li a:hover {
     justify-content: center;
     width: 100%;
     background-color: #FAB330;
+    padding: 0px;
+    margin: 0px;
     /* border: 1px solid red; */
 }
 
@@ -252,9 +274,8 @@ li a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    /* width: 100%; */
     justify-content: space-between;
-    margin: 40px;
+    margin: 0px 40px;
 }
 
 .col1 {
@@ -293,7 +314,7 @@ li a:hover {
     margin: 0px;
 }
 
-/* subscription button styling */
+/* SUBSCRIPTION BUTTON STYLING */
 
 .buttonIn {
 width: 250px;
