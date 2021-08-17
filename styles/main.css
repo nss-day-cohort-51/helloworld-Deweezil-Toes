@@ -1,65 +1,318 @@
 
-h1.a {font-family: “Poppins”, sans-serif;}
-h1.b {font-family: “Abril Fatface”, sans-serif;}
+/* Colors used for this website are - 
 
+#5282FA brand blue
+#131E3B dark blue
+#28407A navy blue
+#FAB330 mustard
+
+Font-pairing is -
+
+{font-family: “Abril Fatface”, sans-serif;}
+{font-family: “Poppins”, sans-serif;}
+
+*/
+
+
+/* General format styling */
 
 body {
-margin: 0px;
-padding: 0px;
+    background-color: #FAB330;
+    margin: 0px;
+    padding: 0px;
 }
 
 h1 {
-
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #131E3B;
 }
 
 h2 {
-    
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #131E3B;    
 }
 
 h3 {
-    
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #131E3B;  
 }
 
 h4 {
-    
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #131E3B;   
 }
 
 h5 {
-    
+    font-family: "Abril Fatface", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #131E3B;
 }
 
 p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight:400;
+    color: #131E3B;  
+}
 
+/* header styling */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    /* width: 100% */
+    background-color: #FAB330;
+    justify-content: center;
+    /* border: 10px solid red; */
 }
 
 .logo {
-    
+    align-self: center;
+    width: 300px;
+    /* border: 1px solid pink; */
 }
 
-.nav{
+.top-logo {
+    width: 100%;
+    /* border: 1px dotted rgba(255, 255, 255); */
+}
+
+.nav {
+    border: 0px;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.nav-bar {
+    border: 0px;
+    list-style-type: none;
+    margin: 0px 0px 15px 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav a { 
+    display: inline-block;
+    padding: 0px 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
 
 }
 
-.header{
+/* this makes the link in the nav bar change color when hovering */
+li a:hover {
+    color: #5282FA
+    ;
+  }
 
+.header span {
+    width: 100%;
+    height: 4px;
+    background-color: #5282FA;
 }
 
-.main{
+/* main body styling */
 
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
-.section1{
-
+.section1 {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
-.section2{
-
+.banner {
+    width: 100%;
 }
 
-.section3{
-
+.section2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
 }
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:white;
+    margin: 5px 0px 0px 0px;
+}
+
+.country-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+    padding: 0px 0px 30px 0px;  
+  /*   border: 1px dashed black; */
+  }
+
+  .country-cards a {
+    text-decoration: none;
+    color: #131E3B;
+    margin: 0px;
+    padding: 0px; 
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ffa545;
+    background-color: #FAB330;
+    text-align: center;
+    margin: 10px;
+    padding: 4px;
+    border-radius: .30rem;
+  }
+
+  .card-text {
+    width: 250px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: justify;
+    background-color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 31px 25px 30px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .card-text h4 {
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;    
+  }
+
+/* footer styling */
 
 .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #FAB330;
+    /* border: 1px solid red; */
+}
 
+
+.footer span {
+    width: 100%;
+    height: 4px;
+    background-color: #5282FA;
+}
+
+.section4 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* width: 100%; */
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.col1 {
+  align-self: center;
+  text-align: center;
+  margin-left: 20px;  
+}
+
+.col2 {
+    align-self: center;
+}
+
+.col3 {
+    align-self: center;
+    margin-right: 20px;
+}
+
+.bottom-logo {
+    width: 200px;
+}
+
+.address {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    line-height: 1; 
+    text-align: center;   
+}
+
+.address h5 {
+    /* color: white;
+    font-size: 18px;
+    font-weight: 700; */
+    color: white;
+    margin: 0px;
+    /* text-decoration: underline; s */
+}
+
+/* subscription button styling */
+
+.buttonIn {
+width: 250px;
+margin: 0px 0px 0px 10px;
+position: relative;
+} 
+
+input {
+margin: 0px;
+padding: 0px;
+width: 100%;
+outline: none;
+height: 45px;
+border: 0px;
+border-radius: 50px;
+box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.188);
+}
+
+.subscribe-btn {
+position: absolute;
+top: 0;
+border-radius: 50px;
+right: 0px;
+border: none;
+width: 85px;
+height: 45px;
+cursor: pointer;
+font-family: "Poppins", sans-serif;
+font-size: 20px;
+font-weight: 900;
+color: white;
+background-color: transparent;
+transform: translateX(2px);
+background-color: #5282FA; 
+background-size: 80px;
 }
