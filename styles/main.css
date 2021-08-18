@@ -196,11 +196,13 @@ background-color: #5282FA;
     /* background-color: #FFFFFF; */
     background-color: #FAB330;
     margin: 0px 0px 0px 0px;
-    padding: 0px 0px 10px 0px;
+    padding: 0px 300px 40px 300px;
 }
 .section2 p {
     font-size: 22px;
     font-family: "Poppins", sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 .section3 {
@@ -240,7 +242,7 @@ background-color: #5282FA;
     border: 2px solid #131E3B;
     background-color: white;
     text-align: center;
-    margin: 10px;
+    margin: 10px 30px;
     padding: 4px;
     border-radius: .30rem;
   }
@@ -308,7 +310,7 @@ background-color: #5282FA;
 }
 
 .col2 {
-    align-self: center;
+    align-self: flex-end;
 }
 
 .col3 {
@@ -326,7 +328,9 @@ background-color: #5282FA;
     font-weight: 400;
     color: white;
     line-height: 1; 
-    text-align: center;   
+    text-align: center; 
+    margin: 0px 0px 15px 0px;
+    padding: 0px 0px 0px 0px;  
 }
 
 .address h5 {
@@ -335,6 +339,18 @@ background-color: #5282FA;
     font-weight: 700; */
     color: white;
     margin: 0px;
+}
+
+/* horizontal line and copyright info */
+
+hr {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.col2 p {
+    color: white;
+    font-size: 14px;
 }
 
 /* SUBSCRIPTION BUTTON STYLING */
