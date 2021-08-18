@@ -134,6 +134,17 @@ ul {
 
 }
 
+/*  this makes the page */
+.active {
+    display: inline-block;
+    padding: 0px 60px;
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #5282FA;
+    text-decoration: none;  
+}
+
 /* this makes the link in the nav bar change color when hovering */
 li a:hover {
     color: #5282FA
@@ -227,24 +238,27 @@ background-color: #5282FA;
     flex-direction: column;
     flex-wrap: nowrap;
     border: 2px solid #131E3B;
-    background-color: #5282FA;
+    background-color: white;
     text-align: center;
     margin: 10px;
     padding: 4px;
     border-radius: .30rem;
   }
 
+  .card img {
+      border: 1px solid black;
+  }
+
   .card-text {
     word-wrap: break-word;
     overflow-wrap: break-word;
-    text-align: justify;
+    text-align: left;
     background-color: #FFFFFF;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     font-weight: 500;
     padding: 15px 30px 25px 31px;
     margin: 0px 0px 0px 0px;
-    list-style-type: none;
   }
 
   .card-text h4 {
